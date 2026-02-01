@@ -19,7 +19,7 @@ interface AIChatbotProps {
 }
 
 // Google Gemini API configuration
-const GEMINI_API_KEY = 'AIzaSyD9cGZSYyxAOBQglF2mbt2vLHNmDKUtjGw';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
 /**
